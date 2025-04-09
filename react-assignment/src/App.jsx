@@ -2,7 +2,7 @@ import React, { useState } from "https://cdn.skypack.dev/react";
 import LandingPage from "./pages/LandingPage.jsx";
 import ProductListing from "./pages/ProductListing.jsx";
 import CartPage from "./pages/CartPage.jsx";
-import Header from "./components/Header.jsx";
+import Header from "./pages/Header.jsx";
 
 const App = () => {
   const [page, setPage] = useState("landing");
