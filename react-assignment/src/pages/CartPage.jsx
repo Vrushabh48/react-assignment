@@ -74,6 +74,7 @@ const ShoppingCartPage = () => {
         <Link to="/cart" style={{ fontWeight: "bold", textDecoration: "none", color: "#333" }}>
           🛒 Cart ({totalItems})
         </Link>
+        <button onClick={navigate('/products')}>Product List Page</button>
       </div>
       <h2 style={{ margin: 0 }}>GreenLeaf Houseplants</h2>
     </header>

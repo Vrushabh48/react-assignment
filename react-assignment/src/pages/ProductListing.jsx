@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
+import {useNavigate}  from 'react-router-dom';
 
 const plantsData = [
   {
@@ -49,6 +50,7 @@ const plantsData = [
 const ProductListingPage = () => {
   const [cart, setCart] = useState([]);
   const [disabledButtons, setDisabledButtons] = useState({});
+  const navigate = useNavigate();
 
   const addToCart = (plant) => {
     setCart((prev) => [...prev, plant]);
@@ -79,6 +81,7 @@ const ProductListingPage = () => {
       </div>
       <h2 style={{ margin: 0 }}>GreenLeaf Houseplants</h2>
     </header>
+    <button onClick={navigate('/cart')}>Product List Page</button>
       <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>Shop Houseplants</h1>
 
       {categories.map((category) => (
